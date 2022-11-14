@@ -13,9 +13,9 @@ public class ArrayUtils {
             int midIndex = (startIndex + endIndex) / 2;
 
             if(element < array[midIndex]) {
-                endIndex = midIndex;
+                endIndex = midIndex - 1;
             } else if(element > array[midIndex]) {
-                startIndex = midIndex;
+                startIndex = midIndex + 1;
             } else {
                 return midIndex;
             }
